@@ -41,7 +41,7 @@ body {
   text-align: center;
   text-transform: capitalize;
   font-size: 1.2rem;
-  text-shadow: 5px 5px #5e5e5e;
+  text-shadow: 3px 3px #5e5e5e;
   padding: 20px 0 30px;
   color: var(--font-color);
 }
