@@ -6,9 +6,7 @@
 
 html {
   /* 
- 
- - px ensure to use the rem for better responsive design
-  
+  px ensure to use the rem for better responsive design
   */
   font-size: 16px;
 }
@@ -17,4 +15,102 @@ body {
 }
 
 :root {
+  /* colors */
+
+  --font-color: #ffffff;
+  --delete: #dc2626;
+  --edit: #0284c7;
+  --save: #16a34a;
+  --shadow: #0000;
+
+  /* gradient */
+
+  --background: linear-gradient(to bottom right, #a855f7, #38bdf8);
+}
+
+/* main container style */
+.main-container {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--background);
+  position: absolute;
+}
+
+/* title style */
+.main-container .head-title {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  text-shadow: 5px 5px #5e5e5e;
+  padding: 20px 0 30px;
+  color: var(--font-color);
+}
+
+/* table style */
+.main-container .table-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.table-section .table-container {
+  background-color: var(--font-color);
+  padding: 1.1rem;
+  border-radius: 10px;
+}
+
+.table-head {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  height: 3rem;
+  border-radius: 5px;
+}
+
+.table-head tr th {
+  background-color: #e5e5e5;
+  padding: 0 2rem;
+}
+.table-head tr th:first-child {
+  border-radius: 8px 0 0 8px;
+}
+.table-head tr th:last-child {
+  border-radius: 0 8px 8px 0;
+}
+
+.table-body {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.table-body tr td {
+  border-bottom: 1px solid #b3b2b2;
+  padding: 1rem;
+}
+
+.table-body .fa-pen-to-square {
+  color: var(--edit);
+  cursor: pointer;
+}
+
+.table-body .fa-trash {
+  color: var(--delete);
+  cursor: pointer;
+}
+
+/* footer style */
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
 }
